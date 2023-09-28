@@ -1,0 +1,861 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+#hero{
+    width:100%;
+    height:100vh;
+    background-color:black;
+    color:white;
+}
+html{
+    scroll-behavior: smooth; /*it moves smoothly*/
+    font-size:62.5%; /* hamey rem for responsive use kartihee rem = 16px lekin calciukate karna mushkil hota so yaha default se 10px rakhetoh ab 1 rem=10px fro bettter calc*/
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    height:6rem;
+}
+nav h1{
+    padding:1.2rem 2rem;
+    color:deeppink;
+    font-size:2.5rem;
+}
+nav ul{
+    display: flex;
+
+}
+nav ul li{
+    list-style: none;
+    padding:1.2rem 1rem;
+}
+nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    padding:1rem 2rem;
+    font-size: 2.4rem;
+    color:white;
+}
+
+nav ul li a:hover{
+    color:deeppink;
+}
+#myname{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+text-align: center;
+}
+#hello{
+    text-align: center;
+}
+#n{
+   margin-top: 25rem;
+    font-size: 30rem;
+    line-height: 16rem;
+    color:transparent;
+    -webkit-text-stroke: 1px white;
+    background: url(back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+@keyframes back{
+ 100%{
+    background-position: 2500px 0;
+ }
+}
+.logos{
+    display:flex;
+    margin-top:2rem;
+    align-items: center;
+    justify-content: center;
+   
+    
+}
+#same1,#same2,#same3{
+    padding:8rem 1.6rem;
+    text-align:center;
+    font-size: 4rem;
+    border-radius: 50%;
+    color:white;
+    /*animation: logos 2s linear infinite;
+    transition: all 2s;*/
+
+   
+}
+.fixedbtn{
+    position:fixed; /*position rakhliyekhot hamey top bottom left right*/
+    width:5rem;
+    height:5rem;
+  background-color: deeppink;
+  border-radius:2rem;
+    color: black;
+    bottom:4rem;
+    right:5rem;
+    
+    
+}
+
+#all{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top:3rem;
+}
+#follow{
+ font-size: 3rem;
+}
+
+.resume a{
+text-decoration: none;
+color:white;
+font-size: 3rem ;
+border: 1px solid deeppink;
+padding:2rem 3rem;
+}
+.explore a{
+    text-decoration: none;
+    color:white;
+    border: 1px solid deeppink;
+    padding:2rem 3rem;
+   
+}
+
+#arrow{
+    color:white;
+   font-size:5rem;
+ transform: translateY(270%);
+ padding-top:0.6rem;
+ padding-left:0.4rem;
+}
+#about{
+    width:100%;
+    height:100vh;
+    background-color: black;
+    color:white;
+}
+.aboutheading{
+    display: flex;
+    justify-content: center;
+    font-size:2rem;
+}
+
+.mycard{
+    margin-left: 3rem;
+    margin-top: 4rem;
+    width:40rem;
+    height:60rem;
+    border:1px solid deeppink;
+   /* background-color: rgb(234, 69, 157);*/
+}
+.mycard img{
+    width:20rem;
+    height:20rem;
+    margin-left: 8rem;
+    transform: translateY(-30%);
+    background-color: white;
+    border-radius: 50%;
+
+}
+.mycard h1{
+    padding-top:0.2rem;
+    color:white;
+ padding-left:5rem;
+ font-size:3rem;
+}
+.mycard p{
+    font-size: 2.5rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    line-height: 2.5rem;
+    opacity: 0.7;
+}
+.mycard button{
+    margin-left: 14rem;
+    margin-top: 5rem;
+    padding:1rem 2rem;
+   border:none;
+    color:black;
+    background-color:white;
+   
+    font-size: 2rem;
+    border-radius: 2rem;
+}
+#name{
+    padding-left: 8rem;
+}
+#aboutinner{
+    display: flex;
+    gap:2rem;
+   
+}
+
+.aboutme h1{
+    margin-top:10rem;
+    margin-left:10rem;
+    font-size:3rem;
+    text-align: center;
+}
+.aboutme h2{
+    margin-top:3rem;
+    margin-left:15rem;
+}
+.aboutme p{
+   line-height: 4rem;
+    margin-top:5rem;
+    margin-left:10rem;
+    padding:1rem 2rem;
+    font-size: 2rem;
+    opacity:0.7;
+}
+.aboutme a#contactlink{
+    text-decoration: none;
+    font-size:4rem;
+    color:white;
+    margin-left:45rem;
+    position: relative; /* Add position relative */
+        top: 10rem;
+    text-align: center;
+    padding: 1rem 2rem;
+    border: 1px solid deeppink;
+}
+@keyframes logos{
+    100%{
+        transform: translatey(-10%);
+    }
+}
+.buttons button:hover{
+    background: #03e9f4;
+    color: #050801 ;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005)
+}
+
+
+.buttons{
+    display:flex;
+    gap:1.5rem;
+    justify-content: space-evenly;
+    margin-top:1rem;
+    
+}
+.buttons button{
+    border:none;
+    border:1px solid deepskyblue;
+    background-color: transparent;
+    color:white;
+    padding:1rem 2rem;
+    border-radius: 2rem;
+    font-size:2rem;
+    
+}
+
+/*.sbsection{
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    transform:translatex(100%)
+}*/
+.bars{
+    
+    transform: translateX(100%);
+    display:flex;
+    gap:5rem;
+    flex-direction: column;
+}
+   
+.bars h5{
+    font-size: 2rem;
+    text-transform: uppercase;
+    transform:translatey(-140%)
+}
+@keyframes bar1{
+    100%{
+        width:70%;
+       
+    }
+}
+@keyframes bar2{
+    100%{
+        width:50%;
+       
+    }
+}
+@keyframes bar3{
+    100%{
+        width:60%;
+       
+    }
+}
+@keyframes bar4{
+    100%{
+        width:70%;
+       
+    }
+}
+@keyframes bar5{
+    100%{
+        width:80%;
+       
+    }
+}
+
+.bar1{
+    transform: translateY(900%);
+    width:40rem;
+    border:2px solid white;
+    border-radius:2rem ;
+    height:2rem;
+   /* background: radial-gradient(circle at 52.1% -29.6%, rgb(144, 17, 105) 0%, rgb(51, 0, 131) 100.2%);*/
+  position: relative;
+    
+}
+.bar2{
+    transform: translateY(900%);
+    width:40rem;
+    border:2px solid white;
+    border-radius:2rem ;
+    height:2rem;
+   /* background: radial-gradient(circle at 52.1% -29.6%, rgb(144, 17, 105) 0%, rgb(51, 0, 131) 100.2%);*/
+  position: relative;
+}
+.bar3{
+    transform: translateY(900%);
+    width:40rem;
+    border:2px solid white;
+    border-radius:2rem ;
+    height:2rem;
+   /* background: radial-gradient(circle at 52.1% -29.6%, rgb(144, 17, 105) 0%, rgb(51, 0, 131) 100.2%);*/
+  position: relative;
+}
+.bar4{
+    transform: translateY(900%);
+    width:40rem;
+    border:2px solid white;
+    border-radius:2rem ;
+    height:2rem;
+   /* background: radial-gradient(circle at 52.1% -29.6%, rgb(144, 17, 105) 0%, rgb(51, 0, 131) 100.2%);*/
+  position: relative;
+}
+.bar5{
+    transform: translateY(900%);
+    width:40rem;
+    border:2px solid white;
+    border-radius:2rem ;
+    height:2rem;
+   /* background: radial-gradient(circle at 52.1% -29.6%, rgb(144, 17, 105) 0%, rgb(51, 0, 131) 100.2%);*/
+  position: relative;
+}
+.bar1::after{
+    content:"";
+    background-color:deeppink ;
+    width:0;
+    height:100%;
+    border-radius: 2rem;
+    transform: translateY(-130%);
+    animation:bar1 2s linear forwards;
+    position: absolute;
+}
+.bar2::after{
+    content:"";
+    background-color:deeppink ;
+    width:0;
+    height:100%;
+    border-radius: 2rem;
+    transform: translateY(-130%);
+    animation:bar2 2s linear forwards;
+    position: absolute;
+}
+.bar3::after{
+    content:"";
+    background-color:deeppink ;
+    width:0;
+    height:100%;
+    border-radius: 2rem;
+    transform: translateY(-130%);
+    animation:bar3 2s linear forwards;
+    position: absolute;
+}
+.bar4::after{
+    content:"";
+    background-color:deeppink ;
+    width:0;
+    height:100%;
+    border-radius: 2rem;
+    transform: translateY(-130%);
+    animation:bar4 2s linear forwards;
+    position: absolute;
+}
+.bar5::after{
+    content:"";
+    background-color:deeppink ;
+    width:0;
+    height:100%;
+    border-radius: 2rem;
+    transform: translateY(-130%);
+    animation:bar5 2s linear forwards;
+    position: absolute;
+}
+#projects{
+    width:100%;
+    height:100vh;
+    background-color: black;
+}
+.procards{
+    display: flex;
+    gap:2.5rem;
+   
+    
+    justify-content: center;
+   align-items: center;
+   height: 80vh;
+   
+}
+
+
+.procard1,.procard2,.procard3{
+    width:30rem;
+    height:40rem;
+    transition: all 0.5s;
+    position:relative;
+   align-items: center;
+   
+}
+
+.procards img{
+ width:30rem;
+ height:40rem;
+ object-fit: cover;
+ border-radius: 2rem;
+}
+
+.procard1:hover,.procard2:hover,.procard3:hover{
+   
+    transform: scale(1.1);
+   
+}
+
+
+.procard1::before,
+.procard2::before,
+.procard3::before
+ {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.4; /* Initially, make the overlay transparent */
+    transition: all 0.3s ease-in-out;
+    pointer-events: none; 
+   /* Add a smooth transition effect */
+}
+
+.procard1:hover::before,
+.procard2:hover::before,
+.procard3:hover::before
+ {
+    opacity: 0; /* When hovering, make the overlay fully opaque */
+}
+
+
+
+.halfc{
+    width:30rem;
+    height:10rem;
+   
+    border-radius:7rem;
+}
+.halfc h1{
+    font-size:4rem;
+    text-align:center;
+   padding-top:2.5rem
+}
+#contactMe{
+    width:100%;
+    height:100vh;
+    background-color: black;
+    overflow:hidden;
+    
+}
+#cinfo img{
+    width:50rem;
+    height:40rem;
+    margin-top:10rem;
+    margin-right: 17rem;
+   
+   
+}
+.re{
+    display:flex;
+    flex-direction: column;
+    gap:1rem;
+    
+}
+.re div{
+    transform: translateX(-50%);
+}
+
+#cinfo{
+    display:flex;
+    justify-content: center;
+    color:white;
+   
+    /*(rgb(167, 95, 167),lightseagreen);*/
+    
+}
+.form-row {
+ 
+    margin-bottom:2rem;
+}
+
+label {
+    font-size: 2rem;
+    color:white;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+   font-weight:bold;
+}
+form{
+    margin-top:12rem;
+    
+}
+.form-row input ,textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    border: 2px solid deeppink;
+    /*background-color: deeppink;*/
+    background-color: transparent;
+  
+    color:cyan;
+   animation:labels 2s forwards;
+    border-radius: 0.5rem;
+}
+
+
+.sub{
+    display: flex;
+}
+ .sub #s, #r{
+     padding:1rem 2rem;
+    border: none;
+    margin:3.5rem;
+    color:deeppink;
+    background-color:transparent;
+    border:1px solid deeppink;
+    font-size:2rem;
+border-radius: 1rem;
+}
+
+
+  
+  
+  
+/* responsive for blackhero*/
+/*@media screen and (max-width: 1024px) {
+    nav {
+        height: auto;
+    }
+
+    nav h1 {
+        padding: 12px 0;  Adjust padding as needed
+    } 
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        padding: 1rem 0;
+        text-align: center;
+    }
+   
+    #myname {
+        
+        text-align: center;
+    }
+
+    .explore a {
+        
+        padding: 5px 10px; 
+        text-align: center; 
+    }
+
+    .logos {
+        
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    #same1, #same2, #same3 {
+      
+        font-size: 24px;
+        padding: 20px 12px; 
+    }
+    
+}
+
+
+@media screen and (max-width: 768px) {
+    #hero {
+        
+        overflow-x: hidden;
+    }
+
+    nav {
+        height: auto; 
+    }
+
+    nav h1 {
+        padding: 12px 0; 
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .explore a {
+       
+        padding: 10px 20px; 
+        text-align: center; 
+    }
+
+    .logos {
+       
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    #same1, #same2, #same3 {
+       
+        font-size: 50px; 
+        padding: 20px 12px;
+        margin-left:170px;
+    }
+   
+    #n {
+        font-size: 80px; 
+        margin-top: 100px; 
+    }
+}
+@media(max-width:998px){
+    html{
+        font-size: 55%;
+    }
+
+}
+@media(max-width:768px){
+    html{
+        font-size: 45%;
+    }
+}
+/*media queries*/
+/* Mobile devices */
+@media   (min-width:320px) and (max-width:480px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav h1 {
+        padding: 1.2rem 0; 
+    }
+    nav ul li {
+        padding: 1rem 0;
+        text-align: center;
+    }
+    nav ul li a {
+        padding: 1rem 0;
+        font-size: 2rem; 
+    }
+    #n{
+        font-size: 7rem;
+        margin-top:7rem;
+    }
+    .logos{
+        display: flex;
+        flex-direction: column;
+    }
+    #follow,#res{
+        padding:1rem 1rem;
+        font-size: 1.5rem;
+    }
+    #same1,#same2,#same3{
+       
+        padding:1rem 1rem;
+    }
+    #aboutinner {
+        flex-direction: column; /* Display the two sections in a column */
+        align-items:center;
+      overflow-y: auto ;
+      }
+    .mycard{
+        width:80%;
+      font-size: 1rem;
+    }
+     
+      .procards{
+        width:20rem;
+        height:40rem;
+        display: flex;
+        flex-direction: column;
+      align-items: center;
+      margin-left: 15rem;
+        margin-top:10rem;
+       
+      }
+   
+      .procards img{
+        width:20rem;
+        height:16rem;
+      }
+    
+      .sbsection {
+        margin-top: 2rem; 
+        visibility: hidden;/* Add some space between the sections */
+      }
+      #cinfo{
+        flex-direction:column;
+        position: relative;
+      }
+      #cinfo img{
+        transform: translatey(-50%);
+        margin-left:1rem;
+        visibility:hidden;
+        width:35rem;
+        height:20rem;
+      }
+      #cinfo form{
+      position: absolute;
+      top:0rem;
+      margin-top:1rem;
+        margin-left:10rem;
+        width:25rem;
+        height:10rem;
+      }
+      .sub{
+        flex-direction: column;
+       
+      }
+       #r{
+       margin-top:1rem;
+      }
+}
+@media (min-width:481px) and (max-width:786px){
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav h1 {
+        padding: 1.2rem 0; 
+    }
+    nav ul li {
+        padding: 1rem 0;
+        text-align: center;
+    }
+    nav ul li a {
+        padding: 1rem 0;
+        font-size: 2rem; 
+    }
+    #n{
+        font-size: 9rem;
+        margin-top:7rem;
+    }
+    .logos{
+        display: flex;
+        flex-direction: column;
+    }
+    #follow,#res{
+        padding:1rem 1rem;
+        font-size: 2.5rem;
+    }
+    #same1,#same2,#same3{
+       
+        padding:1rem 1rem;
+    }
+    #aboutinner {
+        flex-direction: column; /* Display the two sections in a column */
+        align-items:center;
+        overflow-y: auto;
+      }
+   
+     
+      .procards{
+        width:20rem;
+        height:40rem;
+        display: flex;
+        flex-direction: column;
+       margin-left: 17rem;
+        margin-top:10rem;
+       
+      }
+     
+      .procards img{
+        width:25rem;
+        height:18rem;
+      }
+    
+      .sbsection {
+        margin-top: 2rem; 
+       visibility: hidden;
+       /* Add some space between the sections */
+      }
+      #contactMe{
+        position: relative;
+      }
+      #cinfo{
+        flex-direction:column;
+        gap:.2rem;
+        align-items: center;
+       
+       
+      }
+      #cinfo img{
+        width:20rem;
+        height:20rem;
+        top:0;
+        left:0;
+       position: absolute;
+      }
+     #cinfo form{
+        width:24rem;
+        height:10rem;
+        margin-left: 12rem;
+        transform: translatey(-50%);
+     }
+      /*#cinfo img{
+        transform: translatey(-50%);
+        margin-left:1rem;
+        
+        width:30rem;
+        height:20rem;
+      }
+      #cinfo form{
+     
+     transform: translateY(-300%);
+      margin-top:1rem;
+        margin-left:33rem;
+        width:25rem;
+        height:10rem;
+      }*/
+      .sub{
+      
+       justify-content: center;
+       
+      }
+    
+}
