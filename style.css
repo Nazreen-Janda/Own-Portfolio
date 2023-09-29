@@ -191,7 +191,7 @@ padding:2rem 3rem;
 }
 #aboutinner{
     display: flex;
-    gap:2rem;
+   gap:2rem;
    
 }
 
@@ -667,6 +667,9 @@ border-radius: 1rem;
 /*media queries*/
 /* Mobile devices */
 @media   (min-width:320px) and (max-width:480px) {
+    body{
+        overflow-y: auto;
+    }
     nav ul {
         flex-direction: column;
         align-items: center;
@@ -700,34 +703,78 @@ border-radius: 1rem;
     }
     #aboutinner {
         flex-direction: column; /* Display the two sections in a column */
-        align-items:center;
-      overflow-y: auto ;
+       justify-content:center;
+      
+      overflow-y: auto;
+      position: relative;
       }
     .mycard{
-        width:80%;
+        width:100%;
       font-size: 1rem;
     }
+    .mycard p{
+        font-size: 1.8rem;
+    }
+    .bar1,.bar2,.bar3,.bar4{
+        width:20rem;
+
+    }
+   .bar5{
+    visibility: hidden;
+   }
+    .bars{
+       justify-content: center;
+       transform: translateX(50%);
+    }
+    .sbsection {
+        top:10;
+        left:0;
+      
+        position: absolute;
+     
+         /* Reorder cardssection below sbsection */
+      }
+      .cardssection img{
+       visibility: hidden;
+        margin-right:1.3rem;
+        width:10rem;
+        height: 10rem;
+      }
+      .cardssection{
+        transform: translateY(-23%);
+       margin-right:15rem;
+        width:35rem;
+        
+        overflow-x: hidden;;
+        
+      }
      
       .procards{
         width:20rem;
         height:40rem;
-        display: flex;
+       
         flex-direction: column;
       align-items: center;
       margin-left: 15rem;
         margin-top:10rem;
        
       }
-   
+      .mycard{
+        border:none;
+        margin-left:0rem;
+      }
+   .mycard button{
+    margin-left: 5rem;;
+   }
       .procards img{
         width:20rem;
         height:16rem;
       }
     
-      .sbsection {
+      /*.sbsection {
         margin-top: 2rem; 
-        visibility: hidden;/* Add some space between the sections */
-      }
+        visibility: hidden;
+      }*/
       #cinfo{
         flex-direction:column;
         position: relative;
@@ -754,6 +801,7 @@ border-radius: 1rem;
        #r{
        margin-top:1rem;
       }
+     
 }
 @media (min-width:481px) and (max-width:786px){
     nav ul {
